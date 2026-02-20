@@ -3,7 +3,7 @@ export class User {
     public lastname: string;
     private age: number;
 
-    static BIRTH_YEAR: number = new Date().getFullYear();
+    static BIRTH_YEAR: number = 2000;
 
     constructor(){
         this.firstname = "";
@@ -11,22 +11,26 @@ export class User {
         this.age = 0;
 
     }
+    setFirstname(firstname: string): void {
+    this.firstname = firstname;
+    }
+
+    setLastname(lastname: string): void {
+    this.lastname = lastname;
+    }
+
     setAge(age: number): void {
-        if (age <= 0){
-            this.age = age;
-        }
+        if (age >= 0) {
+      this.age = age;
     }
-    setFirstname(firstname: string): void{
-        this.firstname = firstname;
     }
-    setLastname(lastname: string): void{
-        this.lastname = lastname;
+
+    getAge(): number {
+        return this.age;
     }
-    getFullNAME(): string{
+
+    getFullName(): string {
         return `${this.firstname} ${this.lastname}`;
-    }
-      getAge(): number {
-    return this.age;
     }
 }
     
