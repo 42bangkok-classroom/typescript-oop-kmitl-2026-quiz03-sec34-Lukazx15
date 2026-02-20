@@ -1,19 +1,25 @@
 export class Car {
-    public brand: string = "";
-    public model: string = "";
+  public brand: string;
+  public model: string;
 
-    constructor
+  constructor() {
+    this.brand = "";
+    this.model = "";
+  }
 
-    public start(): void;{
-        console.log(`${this.brand} ${this.model} is starting...`);
-    }
-    public brake(): void {
-        console.log(`${this.brand} ${this.model} is braking...`);
-    }
-    public stop(): void {
-        console.log(`${this.brand} ${this.model} is stopping...`);
-    }
+  start(): void {
+    console.log(`${this.brand} ${this.model} is starting...`);
+  }
 
+  accelerate(): void {
+    console.log(`${this.brand} ${this.model} is accelerating...`);
+  }
 
+  brake(): void {
+    console.log(`${this.brand} ${this.model} is braking...`);
+  }
 
+  stop(): void {
+    console.log(`${this.brand} ${this.model} is stopping...`);
+  }
 }
