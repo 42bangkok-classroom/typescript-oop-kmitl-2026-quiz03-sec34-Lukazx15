@@ -1,6 +1,6 @@
 export class Character {
-    protected name: string;
-    protected health: number;
+    public name: string;
+    public health: number;
 
     constructor(name: string, health: number = 100) {
     this.name = name;
