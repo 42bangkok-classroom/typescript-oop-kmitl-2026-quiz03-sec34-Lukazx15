@@ -16,7 +16,17 @@ export class User {
             this.age = age;
         }
     }
-
-
+    setFirstname(firstname: string): void{
+        this.firstname = firstname;
+    }
+    setLastname(lastname: string): void{
+        this.lastname = lastname;
+    }
+    getFullNAME(): string{
+        return `${this.firstname} ${this.lastname}`;
+    }
+      getAge(): number {
+    return this.age;
+    }
 }
     
