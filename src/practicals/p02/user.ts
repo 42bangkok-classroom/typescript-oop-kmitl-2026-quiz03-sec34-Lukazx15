@@ -30,7 +30,8 @@ export class User {
     }
 
     getFullName(): string {
-        return `${this.firstname} ${this.lastname}`;
+        const fullName = `${this.firstname} ${this.lastname}`.trim();
+        return fullName;
     }
 }
     
